@@ -7,3 +7,4 @@ services:
 
     script:
         - docker run rogerloh/docker-react npm run test -- --coverage
+        
