@@ -3,7 +3,7 @@ services:
     - docker
 
 before_install:
-    - docker build -t rogerloh/react-docker -f Dockerfile.dev
+    - docker build -t rogerloh/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run rogerloh/react-docker npm run test -- --coverage
+    - docker run rogerloh/docker-react npm run test -- --coverage
